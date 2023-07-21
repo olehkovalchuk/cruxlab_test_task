@@ -1,5 +1,3 @@
-require_relative 'spec_helper'
-
 RSpec.describe Validator do
   describe ".call" do
     let(:line) { 'a 1-5: abcdj' }

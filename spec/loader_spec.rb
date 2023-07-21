@@ -1,8 +1,6 @@
-require_relative './spec_helper'
-
 RSpec.describe Loader do
   describe ".call" do
-    let(:path) { '../data.txt' }
+    let(:path) { './data.txt' }
     let(:result) { File.read(path).split("\n") }
     subject { described_class.new(path) }
 
